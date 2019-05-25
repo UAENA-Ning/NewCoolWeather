@@ -25,7 +25,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".LogInActivity"></activity>
+        <activity android:name=".login_registered.LogInActivity" />
+        <activity android:name=".login_registered.RegisteredActivity"></activity>
     </application>
 
 </manifest>

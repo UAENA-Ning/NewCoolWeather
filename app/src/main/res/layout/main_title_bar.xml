@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--标题栏与返回键的创建，独立在main_title_bar.xml中-->
+<!--标题栏设置高度为50dp，宽度为match_parent,设置背景颜色为通明为@android:color/transparent-->
+<!--RelativeLayout为相对布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/title_bar"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/go_back_selector" />
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+    <!--其中android:background="@drawable/go_back_selector"为点击回退键时，会变化效果，其实就是一个点击更换个图片而已。-->
+    <!--我们先用这种老方法，接下来以后的文章才做代码优化效果-->
+</RelativeLayout>
